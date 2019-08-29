@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/api/nodejs', (req, res) => {
 	res.send({
 		hello: 'world',
 		from: 'a service written in nodejs',

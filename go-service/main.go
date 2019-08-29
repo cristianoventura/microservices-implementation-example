@@ -10,7 +10,7 @@ import (
 
 func main() {
 	router := mux.NewRouter().StrictSlash(true)
-	router.HandleFunc("/", SayHello)
+	router.HandleFunc("/api/go", SayHello)
 	log.Fatal(http.ListenAndServe(":3000", router))
 }
 
